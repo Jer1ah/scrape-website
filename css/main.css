@@ -1,0 +1,53 @@
+.navigation {
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation__logo {
+  font-size: 3rem;
+  margin-left: 15rem;
+  color: #fff;
+}
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+  margin-right: 15rem;
+}
+.navigation__listItem {
+  margin: 0 1.5rem;
+}
+.navigation__listItem a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 100vh;
+  background: url("../../img/header-image1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.heading {
+  margin: 25rem 0 0 15rem;
+}
+.heading h1 {
+  font-size: 7rem;
+  color: #fff;
+}
+.heading span {
+  border-bottom: 0.5rem #fff solid;
+}
+
+/*# sourceMappingURL=main.css.map */

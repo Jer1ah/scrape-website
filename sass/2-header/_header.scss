@@ -1,0 +1,19 @@
+.header {
+    height: 100vh;
+    background: url('../../img/header-image1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    margin: 25rem 0 0 15rem;
+
+    h1 {
+        font-size: 7rem;
+        color: #fff;
+    }
+
+    span {
+        border-bottom: .5rem #fff solid;
+    }
+}
