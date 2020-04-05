@@ -5,6 +5,7 @@
     background-position: center;
     padding: .1rem;
     clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 16% 95%, 0 95%, 0 0);
+    z-index: 1;
 }
 
 .heading {
@@ -19,6 +20,6 @@
     }
 
     span {
-        border-bottom: .5rem #fff solid;
+        text-decoration: underline;
     }
 }
