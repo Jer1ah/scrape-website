@@ -3,9 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 101;
 }
 .navigation__logo {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  letter-spacing: 0.3rem;
   margin-left: 15rem;
   color: #fff;
 }
@@ -17,12 +22,20 @@
   margin-right: 15rem;
 }
 .navigation__listItem {
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 .navigation__listItem a {
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1.2rem;
+  font-weight: 700;
+}
+.navigation__listItem a:hover {
+  color: white;
+}
+
+.active {
+  color: white !important;
 }
 
 html, body {
@@ -30,6 +43,7 @@ html, body {
   padding: 0;
   font-size: 10px;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -37,17 +51,57 @@ html, body {
   background: url("../../img/header-image1.png");
   background-size: cover;
   background-position: center;
+  padding: 0.1rem;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 100% 100%, 18% 95%, 0 95%, 0 0);
 }
 
 .heading {
-  margin: 25rem 0 0 15rem;
+  margin: 33rem 0 0 15rem;
 }
 .heading h1 {
-  font-size: 7rem;
+  font-size: 6.6rem;
   color: #fff;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  line-height: 8rem;
 }
 .heading span {
   border-bottom: 0.5rem #fff solid;
+}
+
+.services {
+  width: 110rem;
+  margin: 9rem auto 10rem;
+}
+.services h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.services__list {
+  list-style: none;
+  padding: 0;
+  margin: 8.8rem 0 10rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.services__listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 33rem;
+  margin-right: 3.3rem;
+}
+.services__listItem img {
+  width: 9rem;
+}
+.services__listItem h3 {
+  font-size: 2rem;
+  margin: 1rem 0 2rem;
+}
+.services__listItem p {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #555;
 }
 
 /*# sourceMappingURL=main.css.map */

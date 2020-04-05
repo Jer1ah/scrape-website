@@ -3,14 +3,19 @@
     background: url('../../img/header-image1.png');
     background-size: cover;
     background-position: center;
+    padding: .1rem;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 100% 100%, 18% 95%, 0 95%, 0 0);
 }
 
 .heading {
-    margin: 25rem 0 0 15rem;
+    margin: 33rem 0 0 15rem;
 
     h1 {
-        font-size: 7rem;
+        font-size: 6.6rem;
         color: #fff;
+        letter-spacing: .3rem;
+        font-weight: 600;
+        line-height: 8rem;
     }
 
     span {
