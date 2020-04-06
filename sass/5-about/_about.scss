@@ -1,0 +1,47 @@
+.about {
+    h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        width: 110rem;
+        margin: 11rem auto 7rem;
+    }
+}
+
+.aboutContainer {
+    width: 110rem;
+    margin: 0 auto 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__info {
+        flex: 3;
+
+        p {
+            width: 90%;
+            font-size: 1.4rem;
+            color: #444;
+            line-height: 3rem;
+            margin-top: 0;
+        }
+
+        button {
+            border: none;
+            color: #fff;
+            background-color: #222;
+            height: 5rem;
+            width: 13rem;
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            margin-top: 1.4rem;
+        }
+    }
+
+    &__image {
+        flex: 2;
+
+        img {
+            width: 100%;
+        }
+    }
+}
