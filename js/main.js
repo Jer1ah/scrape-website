@@ -1,11 +1,11 @@
 const navController = (function() {
-    const navigation = document.querySelector(".navigation");
+    const _navigation = document.querySelector(".navigation");
 
     const onScroll = () => {
         if( window.scrollY > 50 ) {
-            navigation.style.background = 'rgba(0, 0, 0, 0.9)';
+            _navigation.style.background = 'rgba(0, 0, 0, 0.9)';
         } else {
-            navigation.style.background = 'transparent';
+            _navigation.style.background = 'transparent';
         }
     };
 
@@ -24,3 +24,19 @@ const headerController = (function() {
         changeWord: changeWord
     }
 }());
+
+
+const teamProfileController = (function() {
+    const _profileList = document.querySelectorAll(".profile");
+    const _socialOverlayList = document.querySelectorAll(".social-overlay");
+    for(let i = 0; i < 4; i++) {
+        _profileList[i].addEventListener("mouseover", () => {
+            _socialOverlayList[i].style.transform = "translateY(0)";
+        });
+
+        _profileList[i].addEventListener("mouseout", () => {
+            _socialOverlayList[i].style.transform = "translateY(18rem)";
+        });
+    }
+}());
+

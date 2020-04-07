@@ -43,6 +43,7 @@
         height: 23rem;
         width: 23rem;
         overflow: hidden;
+        position: relative;
 
         &-image {
             width: 100%;
@@ -51,6 +52,18 @@
     }
 
     .social-overlay {
-        display: none;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,.6);
+        border-radius: 50%;
+        transform: translateY(18rem);
+        transition: .5s;
+
+        img {
+            width: 2rem;
+            margin: 10.5rem .7rem 0;
+        }
     }
 }
