@@ -23,3 +23,31 @@
         text-decoration: underline;
     }
 }
+
+
+//MEDIA QUERIES
+@media( max-width: 1350px ) {
+    .heading {
+        margin-left: 10rem;
+    }
+}
+
+@media( max-width: 975px ) {
+    .heading {
+        margin-left: 5rem;
+
+        h1 {
+            font-size: 6rem;
+        }
+    }
+}
+
+@media( max-width: 770px ) {
+    .heading {
+        margin-top: 29rem;
+
+        h1 {
+            max-width: 90%;
+        }
+    }
+}

@@ -1,31 +1,37 @@
-//Changing the background color of the nav on scroll
-const navController = (function() {
-    const _navigation = document.querySelector(".navigation");
-
-    const onScroll = () => {
-        if( window.scrollY > 50 ) {
-            _navigation.style.background = 'rgba(0, 0, 0, 0.9)';
+//Mobile nav menu dropdown functionality 
+const mobileNavController = (function() {
+    $(".mobile-nav img").on("click", () => {
+        if( $(".navigation__list").css("display") === "none" ) {
+            $(".navigation__list").css("display", "flex");
         } else {
-            _navigation.style.background = 'transparent';
+            $(".navigation__list").css("display", "none");
         }
-    };
+    });
 
-    window.addEventListener("scroll", onScroll);
+    $(window).resize(() => {
+        if( $(window).innerWidth() > 975 ) {
+            $(".navigation__list").css("display", "flex");
+        } else if( $(window).innerWidth() < 975 ) {
+            $(".navigation__list").css("display", "none");
+        }
+    })
 }());
+
 
 
 //Changing the underlined word in the header every 3 seconds
 const headerController = (function() {
-    let _underlinedWord = document.querySelector(".heading span");
     const _wordsArray = ["Architecture", "Creative", "Design"];
     let index = 0;
     window.setInterval(() => {
         if(index === 3) {
             index = 0;
         }
-        _underlinedWord.textContent = _wordsArray[index];
-        index++;
-        console.log(index);
+        $(".heading span").fadeOut((() => {
+            $(".heading span").html(_wordsArray[index]);
+            $(".heading span").fadeIn()
+            index++
+        }));
     }, 5000);
 }());
 

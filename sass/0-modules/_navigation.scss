@@ -1,5 +1,6 @@
 .navigation {
-    height: 13rem;
+    height: 11.5rem;
+    min-height: 10rem;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -7,8 +8,9 @@
     width: 100%;
     top: 0;
     z-index: 100;
-    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 16% 72%, 0 72%, 0 0);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 63%, 100% 100%, 24% 79%, 0 79%, 0 0);
     transition: .4s;
+    background: rgba(0,0,0,.9);
 
 
     &__logo {
@@ -17,6 +19,13 @@
         margin-left: 20rem;
         color: #fff;
         margin-top: 2.5rem;
+    }
+
+    .mobile-nav {
+        img {
+            width: 3rem;
+            display: none;
+        }
     }
 
     &__list {
@@ -46,4 +55,73 @@
 
 .active {
     color: rgb(255, 255, 255) !important;
+}
+
+
+//MEDIA QUERIES
+@media( max-width: 1350px ) {
+    .navigation {
+        &__logo {
+            margin-left: 10rem;
+        }
+
+        &__list {
+            margin-right: 10rem;
+        }
+    }
+}
+
+@media( max-width: 1050px ) {
+    .navigation {
+        &__logo {
+            margin-left: 5rem;
+        }
+
+        &__list {
+            margin-right: 5rem;
+        }
+    }
+}
+
+@media( max-width: 975px ) {
+    .navigation {
+        height: auto;
+        flex-direction: column;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 63%, 100% 100%, 25% 92%, 0 92%, 0 0);
+
+        &__logo {
+            margin-left: 5rem;
+            margin-bottom: 2rem;
+            flex-direction: column;
+        }
+
+        .mobile-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                display: block;
+                margin-right: 5rem;
+                margin-top: 1rem;
+            }
+
+            img:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__list {
+            margin-right: 10rem;
+            display: none;
+            flex-direction: column;
+            margin-top: 0;
+            margin-bottom: 4rem;
+        }
+
+        &__listItem {
+            margin-bottom: 1.5rem;
+        }
+    }
 }
