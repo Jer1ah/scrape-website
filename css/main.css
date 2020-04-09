@@ -355,6 +355,7 @@ html, body {
   font-size: 4rem;
   font-weight: 500;
   width: 110rem;
+  max-width: 90%;
   margin: 10rem auto 7rem;
 }
 .ourTeam__list {
@@ -365,6 +366,7 @@ html, body {
   padding: 0;
   margin: 0 auto 10rem;
   width: 110rem;
+  max-width: 90%;
 }
 .ourTeam__listItem {
   text-align: center;
@@ -409,6 +411,26 @@ html, body {
   cursor: pointer;
 }
 
+@media (max-width: 1075px) {
+  .ourTeam {
+    clip-path: none;
+  }
+
+  .ourTeam__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .ourTeam__listItem {
+    margin: 0 5rem 5.5rem;
+  }
+}
+@media (max-width: 990px) {
+  .ourTeam h1 {
+    width: 80%;
+  }
+}
 .blog h1 {
   width: 110rem;
   margin: 9rem auto 7rem;
