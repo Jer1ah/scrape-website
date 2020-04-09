@@ -433,12 +433,14 @@ html, body {
 }
 .blog h1 {
   width: 110rem;
+  max-width: 90%;
   margin: 9rem auto 7rem;
   font-size: 4rem;
   font-weight: 500;
 }
 .blog__list {
   width: 110rem;
+  max-width: 90%;
   margin: 0 auto 15rem;
   padding: 0;
   list-style: none;
@@ -448,6 +450,7 @@ html, body {
 }
 .blog__listItem {
   width: 34.5rem;
+  max-width: 32%;
 }
 .blog__listItem img {
   width: 100%;
@@ -473,6 +476,23 @@ html, body {
   line-height: 2.5rem;
 }
 
+@media (max-width: 995px) {
+  .blog {
+    width: 75%;
+    max-width: 55rem;
+    margin: 0 auto 0;
+  }
+
+  .blog__list {
+    flex-direction: column;
+  }
+
+  .blog__listItem {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 6.6rem;
+  }
+}
 .footer {
   color: white;
   background-color: #111;

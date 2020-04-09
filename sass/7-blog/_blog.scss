@@ -1,6 +1,7 @@
 .blog {
     h1 {
         width: 110rem;
+        max-width: 90%;
         margin: 9rem auto 7rem;
         font-size: 4rem;
         font-weight: 500;
@@ -8,6 +9,7 @@
 
     &__list {
         width: 110rem;
+        max-width: 90%;
         margin: 0 auto 15rem;
         padding: 0;
         list-style: none;
@@ -18,6 +20,7 @@
 
     &__listItem {
         width: 34.5rem;
+        max-width: 32%;
 
         img {
             width: 100%;
@@ -46,5 +49,25 @@
             font-size: 1.4rem;
             line-height: 2.5rem;
         }
+    }
+}
+
+
+//MEDIA QUERIES
+@media( max-width: 995px ) {
+    .blog {
+        width: 75%;
+        max-width: 55rem;
+        margin: 0 auto 0;
+    }
+
+    .blog__list {
+        flex-direction: column;
+    }
+
+    .blog__listItem {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 6.6rem;
     }
 }

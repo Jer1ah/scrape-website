@@ -43,6 +43,7 @@ const teamProfileController = (function() {
     for(let i = 0; i < 4; i++) {
         _profileList[i].addEventListener("mouseover", () => {
             _socialOverlayList[i].style.transform = "translateY(0)";
+            console.log($(window).width());
         });
 
         _profileList[i].addEventListener("mouseout", () => {
