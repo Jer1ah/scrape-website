@@ -3,6 +3,7 @@
         font-size: 4rem;
         font-weight: 500;
         width: 110rem;
+        max-width: 90%;
         margin: 15rem auto 9rem;
     }
 
@@ -51,6 +52,52 @@
             margin: 0 0 -1rem;
             font-size: 2rem;
             font-weight: 500;
+        }
+    }
+}
+
+
+//MEDIA QUERIES
+@media( max-width: 1215px ) {
+    .works__listItem {
+        .description {
+            left: 2rem;
+            bottom: 5rem;
+
+            h5 {
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+            }
+    
+            h3 {
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+        }
+    }
+}
+
+@media( max-width: 975px ) {
+    .works h1 {
+        width: 80%;
+    }
+}
+
+@media( max-width: 795px ) {
+    .works {
+        &__list {
+            flex-direction: column;
+            width: 100%;
+            clip-path: none;
+        }
+
+        &__listItem {
+            width: 100%;
+            margin-bottom: -2rem;
+        }
+
+        .description {
+            bottom: 7.7rem;
         }
     }
 }

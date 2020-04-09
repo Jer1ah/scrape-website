@@ -212,6 +212,7 @@ html, body {
   font-size: 4rem;
   font-weight: 500;
   width: 110rem;
+  max-width: 90%;
   margin: 15rem auto 9rem;
 }
 .works__list {
@@ -256,6 +257,39 @@ html, body {
   font-weight: 500;
 }
 
+@media (max-width: 1215px) {
+  .works__listItem .description {
+    left: 2rem;
+    bottom: 5rem;
+  }
+  .works__listItem .description h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .works__listItem .description h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 975px) {
+  .works h1 {
+    width: 80%;
+  }
+}
+@media (max-width: 795px) {
+  .works__list {
+    flex-direction: column;
+    width: 100%;
+    clip-path: none;
+  }
+  .works__listItem {
+    width: 100%;
+    margin-bottom: -2rem;
+  }
+  .works .description {
+    bottom: 7.7rem;
+  }
+}
 .about h1 {
   font-size: 4rem;
   font-weight: 500;
