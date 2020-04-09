@@ -503,10 +503,12 @@ html, body {
   font-size: 4rem;
   font-weight: 500;
   width: 110rem;
+  max-width: 90%;
   margin: 9rem auto 3.3rem;
 }
 .footer__container {
   width: 110rem;
+  max-width: 90%;
   margin: 0 auto 7rem;
   display: flex;
   justify-content: space-between;
@@ -601,6 +603,57 @@ html, body {
 .footer .form .inputWrapper {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 995px) {
+  .footer h1 {
+    width: 75%;
+  }
+  .footer .address {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+  .footer .address__social {
+    margin-top: 2.4rem;
+    margin-left: 10rem;
+  }
+  .footer__container {
+    flex-direction: column;
+    width: 75%;
+  }
+  .footer .form {
+    width: 100%;
+  }
+  .footer .form form {
+    width: 100%;
+  }
+  .footer .form form input {
+    width: 100%;
+  }
+  .footer .form .inputWrapper {
+    width: 47%;
+  }
+}
+@media (max-width: 675px) {
+  .footer h1 {
+    width: 90%;
+  }
+  .footer .address {
+    flex-direction: column;
+  }
+  .footer .address__social {
+    margin-left: 0;
+  }
+  .footer__container {
+    width: 90%;
+  }
+  .footer .form .inputWrapper {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .footer .form .topRow {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

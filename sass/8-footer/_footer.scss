@@ -8,11 +8,13 @@
         font-size: 4rem;
         font-weight: 500;
         width: 110rem;
+        max-width: 90%;
         margin: 9rem auto 3.3rem; 
     }
 
     &__container {
         width: 110rem;
+        max-width: 90%;
         margin: 0 auto 7rem;
         display: flex;
         justify-content: space-between;
@@ -127,6 +129,76 @@
         .inputWrapper {
             display: flex;
             flex-direction: column;
+        }
+    }
+}
+
+
+//MEDIA QUERIES
+@media( max-width: 995px ) {
+    .footer {
+        h1 {
+            width: 75%;
+        }
+
+        .address {
+            display: flex;
+            margin-bottom: 5rem;
+
+            &__social {
+                margin-top: 2.4rem;
+                margin-left: 10rem;
+            }
+        }
+
+        &__container {
+            flex-direction: column;
+            width: 75%;
+        }
+
+        .form {
+            width: 100%;
+            form {
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+            .inputWrapper {
+                width: 47%;
+            }
+        }
+    }
+}
+
+@media( max-width: 675px ) {
+    .footer {
+        h1 {
+            width: 90%;
+        }
+
+        .address {
+            flex-direction: column;
+
+            &__social {
+                margin-left: 0;
+            }
+        }
+
+        &__container {
+            width: 90%;
+        }
+    
+        .form {
+            .inputWrapper {
+                width: 100%;
+                margin-top: 2rem;
+            }
+
+            .topRow {
+                flex-direction: column;
+            }
         }
     }
 }
