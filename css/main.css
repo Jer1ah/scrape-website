@@ -294,11 +294,13 @@ html, body {
   font-size: 4rem;
   font-weight: 500;
   width: 110rem;
+  max-width: 90%;
   margin: 11rem auto 7rem;
 }
 
 .aboutContainer {
   width: 110rem;
+  max-width: 90%;
   margin: 0 auto 10rem;
   display: flex;
   justify-content: space-between;
@@ -331,6 +333,19 @@ html, body {
   width: 100%;
 }
 
+@media (max-width: 990px) {
+  .about h1 {
+    width: 80%;
+  }
+
+  .aboutContainer {
+    flex-direction: column;
+    width: 80%;
+  }
+  .aboutContainer__info {
+    margin-bottom: 4.4rem;
+  }
+}
 .ourTeam {
   background-color: #f5f5f5;
   padding: 0.1rem;
