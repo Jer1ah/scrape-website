@@ -107,6 +107,7 @@ html, body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -325,6 +326,9 @@ html, body {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   margin-top: 1.4rem;
+}
+.aboutContainer__info button:hover {
+  cursor: pointer;
 }
 .aboutContainer__image {
   flex: 2;

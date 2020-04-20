@@ -18,7 +18,6 @@ const mobileNavController = (function() {
 }());
 
 
-
 //Changing the underlined word in the header every 3 seconds
 const headerController = (function() {
     const _wordsArray = ["Architecture", "Creative", "Design"];
